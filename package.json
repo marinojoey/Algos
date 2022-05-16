@@ -1,0 +1,29 @@
+{
+  "name": "algos",
+  "version": "1.0.0",
+  "description": "Collection of commonly used web3 algorithms and scripts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marinojoey/Algos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marinojoey/Algos/issues"
+  },
+  "homepage": "https://github.com/marinojoey/Algos#readme",
+  "dependencies": {
+    "hardhat": "^2.9.5"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.6",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "chai": "^4.3.6",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.6.6"
+  }
+}
