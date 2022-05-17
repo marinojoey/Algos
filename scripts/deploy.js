@@ -9,11 +9,14 @@ NOTE: Contract and contract are two different objects. the 'getContractFactory()
 const { ethers } = require("hardhat");
 
 async function main() {
-  const Contract = await ethers.getContractFactory("Contract");
-  const contract = await Contract.deploy();
+  const nonUpgradeable = await ethers.getContractFactory("nonUpgradeable");
+  const contract = await nonUpgradeable.deploy();
   await contract.deployed();
 
   console.log(contract.address);
+  console.log("----------")
+  console.log("Verification command below: USE IMPLEMENTATION ADDRESS")
+  console.log("npx hardhat verify --network mainnet DEPLOYED_CONTRACT_ADDRESS 'Constructor argument 1'")
 }
 
 main();
